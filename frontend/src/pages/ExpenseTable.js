@@ -204,7 +204,7 @@ const ExpenseTable = ({
           <span>Select All</span>
         </div>
       </div>
-
+<div className="overflow-x-auto">
       <table className="min-w-full bg-white border border-gray-200 rounded-lg shadow-md">
         <thead>
           <tr className="bg-gray-100 border-b border-gray-200">
@@ -379,7 +379,7 @@ const ExpenseTable = ({
           })}
         </tbody>
       </table>
-
+          </div>
       <nav className="flex items-center mt-4 justify-center">
         <button
           onClick={handlePreviousPage}
