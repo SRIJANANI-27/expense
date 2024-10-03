@@ -27,13 +27,13 @@ function ExpenseForm({ addTransaction, editTransaction, editingExpense, setEditi
     }));
   };
 
-  const formatAmount = (value) => {
-    if (typeof value !== "string") {
-      value = String(value);
-    }
-    const cleanValue = value.replace(/[^0-9.]/g, "");
-    return cleanValue ? parseFloat(cleanValue).toLocaleString() : "";
-  };
+  // const formatAmount = (value) => {
+  //   if (typeof value !== "string") {
+  //     value = String(value);
+  //   }
+  //   const cleanValue = value.replace(/[^0-9.]/g, "");
+  //   return cleanValue ? parseFloat(cleanValue).toLocaleString() : "";
+  // };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -113,7 +113,7 @@ function ExpenseForm({ addTransaction, editTransaction, editingExpense, setEditi
             type="text"
             name="amount"
             placeholder="Enter the amount..."
-            value={formatAmount(expenseInfo.amount)}
+            value={expenseInfo.amount}
             className="mt-1 p-2 border border-gray-300 rounded-md"
           />
         </div>
